@@ -46,7 +46,7 @@
                     <br><br>    
                 </div>
         </div>
-            <div class="msg" style="margin: auto 40px; background-color: rgba(250, 235, 215, 0.765); color: black;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+            <div class="msg" style="margin: auto 40px; background-color: rgba(35, 35, 35, 0.87); color: white;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
                 <h6>Check availability</h6>
                 <form action="">
                     <input type="text" name="check-in" id="check-in" placeholder="Check-In Date" onfocus="(this.type='date')">
@@ -58,6 +58,109 @@
             </div>
         </div>
     </main>
+    <section id="facilities" style="text-align: center;">
+        <h1 class="fac-header">Facilities</h1>
+        <div class="hr"></div>
+        <ul class="fac-list" style="list-style-type: none;">
+          <li class="fac-list-item">
+            <i class="fa-sharp fa-solid fa-wifi"></i>
+            <p>Free Wireless Internet Access</p>
+          </li>
+          <li class="fac-list-item">
+            <i class="fa-solid fa-building-shield"></i>
+            <p>24/7 Security</p>
+          </li>
+          <li class="fac-list-item">
+            <i class="fa-solid fa-person-swimming"></i>
+            <p>Swimming Pool & Poolside Bar</p>
+          </li>
+          <li class="fac-list-item">
+            <i class="fa-solid fa-taxi"></i>
+            <p>Tour & Excursions</p>
+          </li>
+          <li class="fac-list-item">
+            <i class="fa-solid fa-utensils"></i>
+            <p>Semi open & outdoor restaurant</p>
+          </li>
+          <li class="fac-list-item">
+            <i class="fa-solid fa-shirt"></i>
+            <p>Free Laundry Services</p>
+          </li>
+        </ul>
+      </section>
+      <section id="about">
+        <h1 class="fac-header">About</h1>
+        <div class="hr"></div>
+        <div class="about-container">
+          <div class="about-data">
+            <p class="about-desc-header">Founded in 2023 | Headquarters in Bangalore | 700 employees</p>
+            <p class="about-desc">
+              Designed from the ground up to meet the needs of small businesses, Home Town Hotel is the one hotel software that makes it easy to manage your property, attract
+              more guests, convert direct bookings, maintain your website and take online payments. We give you all the tools you need to run your business your way - even a
+              mobile app to use on-the-go. Our platform is simple, our set-up is quick, and 24/7 help is always just one click away.
+            </p>
+          </div>
+          <div class="image">
+            <img src="../images/hotel2.jpg" alt="room" id="img1" />
+          </div>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <h1 class="fac-header">Contact Us</h1>
+        <div class="hr"></div>
+        <div class="con-container">
+          <div class="contact-map">
+            <div class="google-map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62228.85409750036!2d77.59631590000001!3d12.888203299999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1524c170499d%3A0x9423f8c83d07ee39!2sAmiti%20Software%20Technologies%20Private%20Limited!5e0!3m2!1sen!2sin!4v1684913111001!5m2!1sen!2sin"
+                width="400"
+                height="450"
+                style="border: 0;"
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+            <div class="contact-info">
+              <div class="contact-info-item">
+                <h3>Say hello!</h3> <br />
+                <p>+91 7483130175</p>
+                <p>
+                  <a href="mailto:mohanpanathale18@gmail.com">mohanpanathale18@gmail.com</a>
+                </p>
+              </div>
+              <ul class="social-links">
+                <li>
+                  <a href="#" title="Facebook">
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" title="Youtube">
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="contact-form">
+            <h2>Any Queries? Let's talk..</h2>
+            <form action="" method="post">
+              <div class="name-email">
+                <input type="text" class="form-control" name="name" placeholder="Your Name" id="name" required/>
+                <input type="email" class="form-control" name="email" placeholder="Email" id="email" required/>
+              </div>
+              <textarea name="message" rows={6} class="form-control" id="message" placeholder="Message" required></textarea>
+              <input type="submit" class="form-control submit-btn" value="Submit" style="float: right; border-radius: 50px;"/>
+            </form>
+          </div>
+        </div>
+      </section>
     <footer>
         <div class="quick-li">
             <h4>Quick Links</h4>
@@ -69,10 +172,14 @@
                 <li><a href="#">About</a></li>
             </ul>
         </div>
-        <div class="contact">
+        <div class="cright">
+            <p>Copyright&#169 2023 Home Town Hotel</p>
+            <p>All Rights Reserved</p>
+        </div>
+        <div class="f-contact" id="f-contact">
             <p>Contact Us at:</p>
-            <hr style="margin: 5px 0;">
-            <a href="mailto:mohan@amiti.in">mohan@amiti.in</a> 
+            <hr />
+            <a href="mailto:mohan@amiti.in">mohan@amiti.in</a>
         </div>
     </footer>
 
